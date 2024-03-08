@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Analyzer</title>
+    <!-- Add the link to Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/static/bg2.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex justify-center items-center h-screen">
+        <div class="w-full max-w-md p-4 bg-white rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold mb-6">Upload a CSV File</h1>
+            <form class="flex items-center" action="/" method="POST" enctype="multipart/form-data">
+                <div class="mr-4">
+                    <input class="py-2 px-4 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300" type="file" name="csvfile">
+                </div>
+                <div>
+                    <input class="py-2 px-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring focus:border-blue-300" type="submit" value="Upload">
+                </div>
+            </form>
+            
+            <p class="mt-4 text-sm">
+                <a href="/static/demo2.csv" download class="text-blue-500">Download Demo File</a>
+            </p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
